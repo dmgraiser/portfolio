@@ -20,7 +20,7 @@ body{
 }
 
 .navbar .nav > li > a, .navbar-brand, .dropdown-menu> li> a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 a, a:hover, a:visited{
@@ -28,3 +28,10 @@ a, a:hover, a:visited{
 	text-decoration: underline;
 }
 
+.site-pic {
+ 	width: 750px;
+}
+
+.panel{
+	height: 255px;
+}

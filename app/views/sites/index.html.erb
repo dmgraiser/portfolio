@@ -17,6 +17,7 @@
           <td><%= site.title %></td>
           <td><%= site.url %></td>
           <td><%= site.description %></td>
+          <td><%= image_tag site.avatar.url(:thumb) %></td>
           <td><%= link_to 'Show', site %></td>
           <td><%= link_to 'Edit', edit_site_path(site) %></td>
           <td><%= link_to 'Destroy', site, method: :delete, data: { confirm: 'Are you sure?' } %></td>
