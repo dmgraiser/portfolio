@@ -1,14 +1,19 @@
-<div class="container">	
-	<p id="notice"><%= notice %></p>
+<div class="container text-box">
+	<div class="row">
+		<div class="col-md-4">	
+			<p id="notice"><%= notice %></p>
 
-	<h1><%= @site.title %></h1>
+			<h1><%= @site.title %></h1>
 
-	<h3><a href="http://<%= @site.url %>" target="_blank" title="<%= @site.title %>"><%= @site.url %></a></h3>
+			<h3><a href="http://<%= @site.url %>" target="_blank" title="<%= @site.title %>"><%= @site.url %></a></h3>
 
-	<p>
-	  <%= @site.description %>
-	</p>
-
-	<p><%= image_tag @site.avatar.url, class: "site-pic" %></p>
+			<p>
+			  <%= @site.description %>
+			</p>
+		</div>
+		<div class="col-md-8">
+			<p><%= image_tag @site.avatar.url, class: "show-pic" %></p>
+		</div>
+	</div>
 
 </div>

@@ -15,8 +15,12 @@
  */
 
 body{
-	background-color: black;
-	color: white;
+	background: url(<%= asset_path "chairs.jpg" %>) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding-top: 70px;
 }
 
 .navbar .nav > li > a, .navbar-brand, .dropdown-menu> li> a {
@@ -32,6 +36,25 @@ a, a:hover, a:visited{
  	width: 750px;
 }
 
+.show-pic {
+	width: 100%;
+	padding: 10px;
+	border-radius: 15px;
+}
+
 .panel{
 	height: 255px;
+}
+
+.text-box{
+	background: rgba(55, 55, 55, .85);
+	border-radius: 15px;
+}
+
+.index-img{
+	padding: 5px;
+}
+
+.panel{
+	opacity: .85;
 }
