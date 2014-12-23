@@ -46,9 +46,9 @@ a, a:hover, a:visited{
 	border-radius: 15px;
 }
 
-.panel{
+/*.panel{
 	height: 350px;
-}
+}*/
 
 .text-box{
 	background: rgba(55, 55, 55, .85);
@@ -64,5 +64,14 @@ a, a:hover, a:visited{
 }
 
 a>img{
-	width: 100%;
+	max-width: 100%;
 }
+
+#gallery:nth-child(n+1){
+	clear: none;
+}
+
+#gallery:nth-child(2n+1){
+	clear: left;
+}
+
