@@ -4,24 +4,24 @@ class SitesController < ApplicationController
   # GET /sites
   # GET /sites.json
   def index
-    @sites = Site.all
+    @sites = Site.all.order(:id)
   end
 
   # GET /sites/1
   # GET /sites/1.json
   def show
-    @sites = Site.all
+    @sites = Site.all.order(:id)
   end
 
   # GET /sites/new
   def new
     @site = Site.new
-    @sites = Site.all
+    @sites = Site.all.order(:id)
   end
 
   # GET /sites/1/edit
   def edit
-    @sites = Site.all
+    @sites = Site.all.order(:id)
   end
 
   # POST /sites
